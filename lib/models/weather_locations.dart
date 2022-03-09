@@ -24,9 +24,9 @@ class WeatherLocation {
 
 final locationList = [
   WeatherLocation(
-    city: 'Kolkata',
-    dateTime: '07:50 PM — Monday, 9 Nov 2020',
-    temparature: '24\u2103',
+    city: 'Bishkek',
+    dateTime: '07:50 PM — Monday, 9 Mar 2022',
+    temparature: '9\u2103',
     weatherType: 'Night',
     iconUrl: 'assets/moon.svg',
     wind: 10,
@@ -35,7 +35,7 @@ final locationList = [
   ),
   WeatherLocation(
     city: 'London',
-    dateTime: '02:20 PM — Monday, 9 Nov 2020',
+    dateTime: '02:20 PM — Monday, 9 Mar 2022',
     temparature: '15\u2103',
     weatherType: 'Cloudy',
     iconUrl: 'assets/cloudy.svg',
@@ -44,9 +44,9 @@ final locationList = [
     humidity: 82,
   ),
   WeatherLocation(
-    city: 'New York',
-    dateTime: '09:20 AM — Monday, 9 Nov 2020',
-    temparature: '17\u2103',
+    city: 'Almaty',
+    dateTime: '09:20 AM — Monday, 9 Mar 2022',
+    temparature: '5\u2103',
     weatherType: 'Sunny',
     iconUrl: 'assets/sun.svg',
     wind: 5,
@@ -54,9 +54,9 @@ final locationList = [
     humidity: 61,
   ),
   WeatherLocation(
-    city: 'Sydney',
-    dateTime: '01:20 AM — Tuesday, 10 Nov 2020',
-    temparature: '10\u2103',
+    city: 'San Jose',
+    dateTime: '01:20 AM — Tuesday, 9 Mar 2020',
+    temparature: '15\u2103',
     weatherType: 'Rainy',
     iconUrl: 'assets/rain.svg',
     wind: 20,
