@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fp0/models/weather_locations.dart';
 import 'package:fp0/widgets/single_weather_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/svg.dart';
@@ -100,7 +101,10 @@ class WeatherApp extends StatelessWidget {
               ),
             ]),
           ),
-          PageView.builder(itemBuilder: (ctx, i) => SingleWeather()),
+          PageView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: locationList.length,
+              itemBuilder: (ctx, i) => SingleWeather(i)),
         ])));
   }
 }

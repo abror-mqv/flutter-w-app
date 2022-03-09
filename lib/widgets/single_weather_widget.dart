@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:fp0/models/weather_locations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/svg.dart';
 import './indicator.dart';
 
 class SingleWeather extends StatelessWidget {
+  final int index;
+  SingleWeather(this.index);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,13 +25,13 @@ class SingleWeather extends StatelessWidget {
                   children: [
                     SizedBox(height: 150),
                     Text(
-                      "Kolkata",
+                      locationList[index].city,
                       style:
                           GoogleFonts.lato(fontSize: 35, color: Colors.white),
                     ),
                     SizedBox(height: 5),
                     Text(
-                      "01:02 AM - Thursday, 3 Mar 2022",
+                      locationList[index].dateTime,
                       style: GoogleFonts.lato(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
@@ -40,7 +43,7 @@ class SingleWeather extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "18\u2103",
+                      locationList[index].temparature,
                       style: GoogleFonts.lato(
                           fontSize: 85,
                           fontWeight: FontWeight.w300,
@@ -49,14 +52,14 @@ class SingleWeather extends StatelessWidget {
                     Row(
                       children: [
                         SvgPicture.asset(
-                          'assets/moon.svg',
+                          locationList[index].iconUrl,
                           width: 34,
                           height: 34,
                           color: Colors.white,
                         ),
                         SizedBox(width: 10),
                         Text(
-                          "Night",
+                          locationList[index].weatherType,
                           style: GoogleFonts.lato(
                               fontSize: 25,
                               fontWeight: FontWeight.w500,
@@ -186,7 +189,6 @@ class SingleWeather extends StatelessWidget {
                         )
                       ],
                     ),
-                    Indicator()
                   ],
                 ),
               )
