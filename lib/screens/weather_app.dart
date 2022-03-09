@@ -37,7 +37,7 @@ class _WeatherAppState extends State<WeatherApp> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text(''),
+        title: Text("Abror's static data weather app"),
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
